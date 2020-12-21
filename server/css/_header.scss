@@ -7,7 +7,10 @@
     align-items: center;
     flex-direction: column;
 
-   
+    @include respond(phone){
+        clip-path: none;
+
+    }
 
     &__logo{
         display: flex;
@@ -36,84 +39,84 @@
         }
     }
 
-    &__clock{
-        width: 42%;
-        height: 22rem;
-        margin-top:5rem ;
-        display: flex;
-        border: .1rem solid white;
-        justify-content: center;
+    // &__clock{
+    //     width: 42%;
+    //     height: 22rem;
+    //     margin-top:5rem ;
+    //     display: flex;
+    //     border: .1rem solid white;
+    //     justify-content: center;
 
-        @include respond(tab-land){
-            margin-top:2rem ;
-        }
+    //     @include respond(tab-land){
+    //         margin-top:2rem ;
+    //     }
 
-        @include respond(tab-port){
-            width: 60%;
-            height: 17rem;
-        }
+    //     @include respond(tab-port){
+    //         width: 60%;
+    //         height: 17rem;
+    //     }
 
-        @include respond(phone){
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 60%;
-            border:none;
-            height: 40rem;
-        }
-        .hours,
-        .minute{
-            width: 30%;
-            display: flex;
-            padding: 4rem;
-            color: $colorWhite;
-            justify-content: center;
-            align-items: center;
-            font-size: 17vh;
-            font-weight: 300;
-            height: 100%;
+    //     @include respond(phone){
+    //         align-items: center;
+    //         justify-content: center;
+    //         flex-direction: column;
+    //         width: 60%;
+    //         border:none;
+    //         height: 40rem;
+    //     }
+    //     .hours,
+    //     .minute{
+    //         width: 30%;
+    //         display: flex;
+    //         padding: 4rem;
+    //         color: $colorWhite;
+    //         justify-content: center;
+    //         align-items: center;
+    //         font-size: 17vh;
+    //         font-weight: 300;
+    //         height: 100%;
 
 
-            @include respond(tab-land){
-                width: 25%;
-                font-size: 12vh;
-            }
+    //         @include respond(tab-land){
+    //             width: 25%;
+    //             font-size: 12vh;
+    //         }
 
-            @include respond(tab-port){
-                width: 15%;
-                font-size: 8vh;
-            }
+    //         @include respond(tab-port){
+    //             width: 15%;
+    //             font-size: 8vh;
+    //         }
 
-            @include respond(phone){
-                width: 15%;
-                font-size: 7vh;
-            }
+    //         @include respond(phone){
+    //             width: 15%;
+    //             font-size: 7vh;
+    //         }
            
-        }
+    //     }
         
-        .dote{
-            width: 1%;
-            height: 100%;
-            margin:0 1rem ;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+    //     .dote{
+    //         width: 1%;
+    //         height: 100%;
+    //         margin:0 1rem ;
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: center;
+    //         justify-content: center;
 
-            @include respond(phone){
-                display: none;
-            }
-            span{
-                width: 100%;
-                margin: 1rem 0;
-                height: 1.1rem;
-                animation: colorFull 6s infinite;
+    //         @include respond(phone){
+    //             display: none;
+    //         }
+    //         span{
+    //             width: 100%;
+    //             margin: 1rem 0;
+    //             height: 1.1rem;
+    //             animation: colorFull 6s infinite;
              
-                background-color: $colorWhite;
-            }
-        }
+    //             background-color: $colorWhite;
+    //         }
+    //     }
      
-    }
+    // }
 
     &__desc{
         width: 100%;
@@ -127,15 +130,19 @@
             text-align: center;
             font-weight: 300;
             letter-spacing: .3rem;
-            font-size: 6vh;
+            font-size: 9vh;
             @include respond(tab-land){
-                font-size: 6vh;
+                font-size: 8vh;
+            }
+
+            @include respond(tab-port){
+                font-size: 7vh;
             }
     
             @include respond(phone){
                 margin-top:2rem ;
                 line-height: 1.2;
-                font-size: 3vh !important;
+                font-size: 5vh !important;
             }
         }
 
@@ -149,27 +156,24 @@
         height: 30rem;
         justify-content: space-evenly;
         align-items: center;
-        @include respond(phone){
+       
 
-        }
-
-        @include respond(tab-land){
-            width: 100%;
-        }
-
-        @include respond(phone){
-           flex-direction: column;
-        }
 
         &__logo{
+            display: flex;
+            width: 89%;
+            justify-content: center;
+            align-items: center;
+
             @include respond(phone){
-                margin: 1rem 0;
+                margin-right: .5rem !important ;
 
             }
+           
         }
 
         img{
-            width: 18rem ;
+            width: 14rem ;
             height: auto;
             filter:  brightness(0) invert(1);
             &:hover{
@@ -177,15 +181,15 @@
             }
 
             @include respond(tab-land){
-                width: 12rem !important ;
+                width: 9rem !important ;
             }
 
             @include respond(tab-port){
-                width: 8rem !important ;
+                width: 6rem !important ;
             }
 
             @include respond(phone){
-                width: 8rem !important ;
+                width: 4rem !important ;
 
             }
 
@@ -193,44 +197,80 @@
         }
 
         .logo-1{
-            width: 30rem !important;
+            width: 25rem !important;
             height: auto;
             filter:  invert(1);
 
             @include respond(tab-land){
-                width: 20rem !important ;
+                width: 16rem !important ;
             }
 
             @include respond(tab-port){
-                width: 15rem !important;
+                width: 12rem !important;
             }
 
             @include respond(phone){
-                width: 10rem !important ;
+                width: 7rem !important ;
 
             }
             
 
         }
-        .logo-2{
-            width: 30rem !important;
-            height: auto;
-            filter:  none;
+        a{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .eduhack{
+            font-size:7vh !important;
+            font-family: $fontMont;
+            color: white;
+            text-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.582);
+            letter-spacing: .1rem;
+            &:hover{
+                transform: scale(1.1);
+            }
+
 
             @include respond(tab-land){
-                width: 20rem !important ;
+                font-size: 4.5vh !important;
             }
 
             @include respond(tab-port){
-                width: 15rem !important;
+                font-size: 3vh !important;
             }
 
             @include respond(phone){
-                width: 10rem !important ;
+                font-size: 2vh !important;
 
             }
         }
-    
+
+        .fintech{
+            text-align: center;
+            color: white;
+            text-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.582);
+            font-family: $fontAudio;
+            font-size:5vh !important;
+            letter-spacing: .2rem;
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            @include respond(tab-land){
+                font-size: 4vh !important;
+            }
+
+            @include respond(tab-port){
+                font-size: 2.5vh !important;
+            }
+
+            @include respond(phone){
+                font-size: 1.5vh !important;
+
+            }
+        }
     }
 }
 
