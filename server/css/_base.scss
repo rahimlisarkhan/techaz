@@ -26,6 +26,7 @@ html{
   z-index: -1;
   opacity: .4;
   overflow: hidden;
+  
   @include respond(tab-land){
     height: 95rem !important;
 }
