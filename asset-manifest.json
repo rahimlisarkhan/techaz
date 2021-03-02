@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff0e5992.chunk.css",
-    "main.js": "/static/js/main.c12cba26.chunk.js",
-    "main.js.map": "/static/js/main.c12cba26.chunk.js.map",
+    "main.css": "/static/css/main.14fef378.chunk.css",
+    "main.js": "/static/js/main.71105873.chunk.js",
+    "main.js.map": "/static/js/main.71105873.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2506e135.js",
     "runtime-main.js.map": "/static/js/runtime-main.2506e135.js.map",
     "static/js/2.9d7441e1.chunk.js": "/static/js/2.9d7441e1.chunk.js",
     "static/js/2.9d7441e1.chunk.js.map": "/static/js/2.9d7441e1.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.ff0e5992.chunk.css.map": "/static/css/main.ff0e5992.chunk.css.map",
+    "static/css/main.14fef378.chunk.css.map": "/static/css/main.14fef378.chunk.css.map",
     "static/js/2.9d7441e1.chunk.js.LICENSE.txt": "/static/js/2.9d7441e1.chunk.js.LICENSE.txt",
-    "static/media/Artboard 1.6e2734e7.png": "/static/media/Artboard 1.6e2734e7.png",
+    "static/media/Artboard 1.10e5aba9.png": "/static/media/Artboard 1.10e5aba9.png",
     "static/media/Artboard 2.43de9896.png": "/static/media/Artboard 2.43de9896.png",
     "static/media/App.scss": "/static/media/Asset 2.26e8ca85.png",
     "static/media/Femtech(4) (1).fd0f05f0.png": "/static/media/Femtech(4) (1).fd0f05f0.png",
@@ -37,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.2506e135.js",
     "static/js/2.9d7441e1.chunk.js",
-    "static/css/main.ff0e5992.chunk.css",
-    "static/js/main.c12cba26.chunk.js"
+    "static/css/main.14fef378.chunk.css",
+    "static/js/main.71105873.chunk.js"
   ]
 }
